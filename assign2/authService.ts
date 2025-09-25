@@ -7,7 +7,7 @@ export async function login(email: string, password: string) {
     body: JSON.stringify({ email, password }),
     // body: JSON.stringify({
     //     email: 'eve.holt@reqres.in', // ✅ required test email
-    //     password: 'cityslicka', // ✅ required test password
+    //     password: 'pistol', // ✅ required test password
     //   }),
   });
 

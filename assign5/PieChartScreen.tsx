@@ -14,7 +14,8 @@ export default function PieChartScreen() {
     const recompute = () => {
       // aggregate by category
       const map = new Map<string, number>();
-      for (const e of results) {
+      for (const item of results) {
+        const e = item as any; // Cast to any to resolve property access
         const cat = e.category || "Other";
         map.set(cat, (map.get(cat) || 0) + Number(e.amount));
       }
